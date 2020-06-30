@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class ServiceOneService {
   private logSub: Subject<number> = new BehaviorSubject<number>(0);
   private count = 0;
