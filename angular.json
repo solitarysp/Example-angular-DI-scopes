@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Example-angular-DI-scopes"
+    }
+  },
+  "defaultProject": "Example-angular-DI-scopes",
+  "cli": {
+    "analytics": "8895246f-4bc5-496b-8691-6cb6009d5686"
+  }
 }
