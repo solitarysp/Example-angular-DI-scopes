@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { ScreenOneRoutingModule } from './screen-one-routing.module';
 import { ScreenOneComponent } from './screen-one.component';
+import { ScreenOneSubComponent } from './screen-one-sub/screen-one-sub.component';
+import {ServiceOneService} from '../../share/service/service-one.service';
 
 
 @NgModule({
-  declarations: [ScreenOneComponent],
+  declarations: [ScreenOneComponent, ScreenOneSubComponent],
   imports: [
     CommonModule,
     ScreenOneRoutingModule
-  ]
+  ],
+  providers: [ServiceOneService]
 })
 export class ScreenOneModule { }
