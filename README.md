@@ -15,3 +15,7 @@ Run `ng serve` đê start demo
  `git checkout example_DI_Not_providedIn_Root_AND_provided_APP_MODULE`
 
 Chỉ có 1 instance duy nhất nếu chúng ta khai báo provided trong APP MODULE, Các module lazy load nếu không khai báo provided thì vẫn dùng 1 instance duy nhất đó
+
+# Example_Di_ProvideIn_Root_And_Using_ProvideIn_App_Module
+ `git checkout Example_Di_ProvideIn_Root_And_Using_ProvideIn_App_Module`
+ Vẫn chỉ có 1 instance duy nhất nếu chúng ta khai báo providedIn root  trong service và khai báo serivce đó ở trong provided instance
