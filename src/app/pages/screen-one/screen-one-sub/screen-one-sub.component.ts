@@ -4,7 +4,8 @@ import {ServiceOneService} from '../../../share/service/service-one.service';
 @Component({
   selector: 'app-screen-one-sub',
   templateUrl: './screen-one-sub.component.html',
-  styleUrls: ['./screen-one-sub.component.scss']
+  styleUrls: ['./screen-one-sub.component.scss'],
+  providers: [ServiceOneService]
 })
 export class ScreenOneSubComponent implements OnInit {
   count: number;
