@@ -4,7 +4,7 @@ import {BehaviorSubject, Observable, Subject} from 'rxjs';
 @Injectable()
 export class ServiceOneService {
   private logSub: Subject<number> = new BehaviorSubject<number>(0);
-  private count: number;
+  private count = 0;
 
   constructor() {
     console.log('tao them service:', new Date());

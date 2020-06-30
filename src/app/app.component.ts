@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ServiceOneService} from './share/service/service-one.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Example-angular-DI-scopes';
+  count: number = 0;
+
+  constructor(private serviceOneService: ServiceOneService) {
+    serviceOneService.getLogSub().subscribe(value => {
+      this.count = value;
+    });
+  }
+
+  clickCountRoot() {
+    this.serviceOneService.addCount();
+  }
 }
